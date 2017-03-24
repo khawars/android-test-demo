@@ -6,6 +6,8 @@ import android.widget.TextView;
 
 import org.joda.time.DateTime;
 
+import java.util.Date;
+
 import javax.inject.Inject;
 
 public class MainActivity extends Activity {
@@ -26,5 +28,8 @@ public class MainActivity extends Activity {
     long millis = getIntent().getLongExtra(KEY_MILLIS, -1);
     DateTime dateTime = (millis > 0) ? new DateTime(millis) : clock.getNow();
     todayView.setText(DateUtils.format(dateTime));
+
+    Date date;
+
   }
 }

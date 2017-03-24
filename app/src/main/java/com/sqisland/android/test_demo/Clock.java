@@ -6,7 +6,7 @@ import javax.inject.Singleton;
 
 @Singleton
 public class Clock {
-  public DateTime getNow() {
+      public DateTime getNow() {
     return new DateTime();
   }
 }
