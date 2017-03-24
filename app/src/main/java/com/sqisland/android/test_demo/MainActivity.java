@@ -30,6 +30,9 @@ public class MainActivity extends Activity {
     todayView.setText(DateUtils.format(dateTime));
 
     Date date;
+      Date date1;
+      Date date2;
+      Date date3;
 
   }
 }
